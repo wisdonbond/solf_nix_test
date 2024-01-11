@@ -4,11 +4,11 @@ from datetime import datetime
 import re
 import csv
 import os
-
+path_project  = os.path.dirname(os.path.abspath(__file__))
 duplicate_link = set()
-file = "./result/test.csv"
+file = path_project+"/result/test.csv"
 has_previous_file = False
-
+path = os.getcwd()
 
 def get_new_detail(link):
     result = {}
