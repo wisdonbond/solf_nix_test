@@ -1,0 +1,1 @@
+0 * * * * flock -n /tmp/test_python.lockfile  {path}python_test.sh >> {logPath}log.txt
